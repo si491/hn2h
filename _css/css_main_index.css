@@ -1,0 +1,141 @@
+/* This is our main stylesheet */
+/* Styling Guide
+
+Blue: #3A4151
+Green: #7FBBBF
+Bright Green: #BBDB54
+White: #FFFFFF
+Black: #000000
+Grey: #707070
+Navy: #3A4151
+
+Heading: Source Sans Pro
+Paragraph: Source Sans Pro
+*/
+
+  /* Mobile view */
+
+  /* COMMON FOR EVERY PAGE */
+
+
+  .nav-menu {
+      width: 100%;
+      background-color: #FFFFFF;
+      list-style: none;
+      height: 70px;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+
+      display: inline-flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+  }
+
+  .nav-menu li {
+  display: inline;
+  color: #707070;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+  }
+
+  /* logo */
+  .nav-menu li:nth-child(1) img {
+    height: 50px;
+    width: 50px;
+    float:left;
+  }
+
+  /* House N2 Home */
+  .nav-menu li:nth-child(2) {
+    float: left;
+    text-align: left;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  #getinvolved,
+  #projects,
+  #news,
+  #home {
+
+    text-align:right;
+    justify-content: flex-end;
+    float:right;
+  }
+
+  /* Nav Elements */
+  #getinvolved a,
+  #projects a,
+  #news a,
+  #home a{
+
+    text-align: right;
+    text-decoration: none;
+    color: #707070;
+    padding-left: 30px;
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    float: right;
+
+  }
+
+  li {
+    padding: 5px 10px; }
+
+
+    /* Index Styling */
+
+  .index_header {
+    display: block;
+    min-height: 150px;
+    background-image: linear-gradient(60deg, #8CBABE 8.85%, rgba(140, 186, 190, 0.59) 42.19%, rgba(193, 218, 220, 0.31624) 69.27%, rgba(255, 255, 255, 0) 96.35%), url("images/header.png");
+    color: white;
+    background-repeat: no-repeat;
+    margin:0;
+    background-size: 100%;
+    background-position: center;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 34px;
+    font-style: normal;
+    text-align: left;
+    justify-content: center;
+
+  }
+
+  .sec1, .sec3 {
+    display: block;
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Tablet view */
+@media screen and (min-width: 700px){
+/* COMMON FOR EVERY PAGE */
+/* Reduce motion */
+
+
+  /* Desktop view */
+@media screen and (min-width: 1300px){
+
+  /* COMMON FOR ALL PAGES */
+  .site-branding{
+    min-height: 350px;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  /* COMMON FOR ALL PAGES */
+  html{
+      scroll-behavior: auto; /* Removes scroll animation */
+  }
+  .skip a{
+    -webkit-transition: default;
+    transition: default;
+  }
